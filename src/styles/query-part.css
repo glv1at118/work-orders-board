@@ -1,0 +1,70 @@
+#name-input {
+    width: 96%;
+    height: 40px;
+    margin-left: 2%;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 26px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+#slider-box {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#slider-box .titlePart {
+    font-size: 26px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 34px;
+}
+
+.switch #deadline-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: orangered;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 100px;
+    left: 4px;
+    bottom: 4px;
+    background-color: yellow;
+}
+
+#deadline-input:checked+.slider {
+    background-color: orangered;
+}
+
+#deadline-input:checked+.slider:before {
+    -webkit-transform: translateX(92px);
+    -ms-transform: translateX(92px);
+    transform: translateX(92px);
+}

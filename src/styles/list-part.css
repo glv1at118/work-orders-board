@@ -1,0 +1,10 @@
+#displayZone {
+    position: relative;
+    width: 96%;
+    margin-left: 2%;
+    height: 575px;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
