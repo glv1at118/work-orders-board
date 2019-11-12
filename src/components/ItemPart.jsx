@@ -69,29 +69,33 @@ class ItemPart extends React.Component {
         return timeStr;
     }
     render() {
-        return (
-            <ul>
-                {
-                    this.nameSort(this.timeSort()).map((order) => (
-                        <li className="orderItem" key={order.id}>
-                            <h2>{order.name}</h2>
-                            <p>{order.description}</p>
-                            <div className="workerInfo">
-                                <div className="leftBox">
-                                    <img src={this.props.workers[`worker${order.workerId}`].image} alt="img not accessible" />
+        if (this.nameSort(this.timeSort()).length === 0) {
+            return <div id="noMatch">No Matched Results Found :(</div>;
+        } else {
+            return (
+                <ul>
+                    {
+                        this.nameSort(this.timeSort()).map((order) => (
+                            <li className="orderItem" key={order.id}>
+                                <h2>{order.name}</h2>
+                                <p>{order.description}</p>
+                                <div className="workerInfo">
+                                    <div className="leftBox">
+                                        <img src={this.props.workers[`worker${order.workerId}`].image} alt="img not accessible" />
+                                    </div>
+                                    <div className="rightBox">
+                                        <h2>{this.props.workers[`worker${order.workerId}`].name}</h2>
+                                        <p>{this.props.workers[`worker${order.workerId}`].companyName}</p>
+                                        <p>{this.props.workers[`worker${order.workerId}`].email}</p>
+                                        <p>{this.convertTime(order.deadline)}</p>
+                                    </div>
                                 </div>
-                                <div className="rightBox">
-                                    <h2>{this.props.workers[`worker${order.workerId}`].name}</h2>
-                                    <p>{this.props.workers[`worker${order.workerId}`].companyName}</p>
-                                    <p>{this.props.workers[`worker${order.workerId}`].email}</p>
-                                    <p>{this.convertTime(order.deadline)}</p>
-                                </div>
-                            </div>
-                        </li>
-                    ))
-                }
-            </ul>
-        );
+                            </li>
+                        ))
+                    }
+                </ul>
+            );
+        }
     }
 }
 
