@@ -25,6 +25,7 @@ export function makeRequest() {
             .catch(function (error) {
                 console.log(error);
             });
+        // Instead of the above ways, I can also use an object, with the worker's id as the object's keys, and the corresponding worker data as the value. Also use if statement, if there's already such an id, then it means there's already a worker value for it, in this case http request will not be made. If there's no such id, then add that id and make corresponding http request for the worker data. This can be more efficient.
     }
 }
 
