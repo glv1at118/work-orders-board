@@ -70,7 +70,7 @@ class ItemPart extends React.Component {
     }
     render() {
         if (this.nameSort(this.timeSort()).length === 0) {
-            return <div id="noMatch">No Matched Results Found :(</div>;
+            return <div id="noMatch">No Results Found :(</div>;
         } else {
             return (
                 <ul>
