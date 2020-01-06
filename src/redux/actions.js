@@ -3,7 +3,7 @@ import axios from 'axios';
 export function makeRequest() {
     return function (dispatch, getState) {
         let workerIdArr = [];
-        axios.get("https://www.hatchways.io/api/assessment/work_orders")
+        axios.get("https://raw.githubusercontent.com/glv1at118/work-system-api/master/work_orders.json")
             .then(function (response) {
                 dispatch(updateOrders(response.data.orders));
                 for (let x = 0; x < getState().orders.length; x++) {
@@ -13,7 +13,7 @@ export function makeRequest() {
                     }
                 }
                 for (let y = 0; y < workerIdArr.length; y++) {
-                    axios.get(`https://www.hatchways.io/api/assessment/workers/${workerIdArr[y]}`)
+                    axios.get(`https://raw.githubusercontent.com/glv1at118/work-system-api/master/${workerIdArr[y]}.json`)
                         .then(function (response) {
                             dispatch(updateWorkers(response.data.worker));
                         }
