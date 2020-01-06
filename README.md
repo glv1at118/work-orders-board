@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this work-orders-board application, you can perform searching based on worker's name, and sort orders ascendingly or descendingly based on order deadline. The program involves making an api request to a certain url to retrieve data and store them in the redux store. Technologies used include React, Redux, and React-Redux.
+
+App Preview:
+![1](https://user-images.githubusercontent.com/44102726/71849102-3bd57680-309f-11ea-80e9-c9c356e31d7a.JPG)
+![2](https://user-images.githubusercontent.com/44102726/71849103-3bd57680-309f-11ea-8425-b04af1650ed8.JPG)
+![3](https://user-images.githubusercontent.com/44102726/71849105-3bd57680-309f-11ea-94c9-23e5ce1b3c30.JPG)
 
 ## Available Scripts
 
@@ -37,32 +42,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
