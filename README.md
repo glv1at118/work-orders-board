@@ -7,6 +7,9 @@ App Preview:
 
 ## Available Scripts
 
+To install the package dependencies, run:
+### `yarn install`
+
 In the project directory, you can run:
 
 ### `yarn start`
