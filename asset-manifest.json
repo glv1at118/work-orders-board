@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/work-orders-board/static/css/main.4fe127df.chunk.css",
+    "main.js": "/work-orders-board/static/js/main.81d2a286.chunk.js",
+    "main.js.map": "/work-orders-board/static/js/main.81d2a286.chunk.js.map",
+    "runtime-main.js": "/work-orders-board/static/js/runtime-main.1e50ee53.js",
+    "runtime-main.js.map": "/work-orders-board/static/js/runtime-main.1e50ee53.js.map",
+    "static/js/2.1d5e85e5.chunk.js": "/work-orders-board/static/js/2.1d5e85e5.chunk.js",
+    "static/js/2.1d5e85e5.chunk.js.map": "/work-orders-board/static/js/2.1d5e85e5.chunk.js.map",
+    "index.html": "/work-orders-board/index.html",
+    "precache-manifest.275f4f7c2bab286b0a6573c76e8c41a2.js": "/work-orders-board/precache-manifest.275f4f7c2bab286b0a6573c76e8c41a2.js",
+    "service-worker.js": "/work-orders-board/service-worker.js",
+    "static/css/main.4fe127df.chunk.css.map": "/work-orders-board/static/css/main.4fe127df.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e50ee53.js",
+    "static/js/2.1d5e85e5.chunk.js",
+    "static/css/main.4fe127df.chunk.css",
+    "static/js/main.81d2a286.chunk.js"
+  ]
+}
